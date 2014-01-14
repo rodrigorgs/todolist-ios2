@@ -10,8 +10,9 @@
 
 @interface AloViewController ()
 
+@property (weak, nonatomic) IBOutlet UITextField *textField;
 @property (weak, nonatomic) IBOutlet UITextView *textView;
-@property (strong, nonatomic) NSArray *lista;
+@property (strong, nonatomic) NSMutableArray *lista;
 
 @end
 
@@ -25,7 +26,7 @@
 {
     [super viewDidLoad];
     
-    self.lista = @[@"Programar", @"Estudar", @"Trabalhar"];
+    self.lista = [NSMutableArray arrayWithArray:@[@"Programar", @"Estudar", @"Trabalhar"]];
     [self atualizaTarefas];
 }
 
@@ -36,6 +37,9 @@
 }
 
 - (IBAction)aloBotao:(id)sender {
+    NSString *item = self.textField.text;
+    [self.lista addObject:item];
+    [self atualizaTarefas];
 }
 
 @end
