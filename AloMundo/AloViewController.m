@@ -10,6 +10,8 @@
 
 @interface AloViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *label;
+
 @end
 
 @implementation AloViewController
@@ -17,13 +19,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.label.text = @"Alo Mundo!!!";
+    // ou
+    [self.label setText:@"Alo Mundo!!!"];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)aloBotao:(id)sender {
+    self.label.text = @"Alo, Botao!";
+    NSLog(@"Apertou o botao");
 }
 
 @end
