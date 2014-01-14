@@ -10,18 +10,23 @@
 
 @interface AloViewController ()
 
-@property (weak, nonatomic) IBOutlet UILabel *label;
+@property (weak, nonatomic) IBOutlet UITextView *textView;
+@property (strong, nonatomic) NSArray *lista;
 
 @end
 
 @implementation AloViewController
 
+- (void)atualizaTarefas {
+    self.textView.text = [self.lista componentsJoinedByString:@"\n"];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.label.text = @"Alo Mundo!!!";
-    // ou
-    [self.label setText:@"Alo Mundo!!!"];
+    
+    self.lista = @[@"Programar", @"Estudar", @"Trabalhar"];
+    [self atualizaTarefas];
 }
 
 - (void)didReceiveMemoryWarning
@@ -31,8 +36,6 @@
 }
 
 - (IBAction)aloBotao:(id)sender {
-    self.label.text = @"Alo, Botao!";
-    NSLog(@"Apertou o botao");
 }
 
 @end
