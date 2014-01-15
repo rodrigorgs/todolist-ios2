@@ -7,26 +7,27 @@
 //
 
 #import "AloViewController.h"
+#import "ListaTarefas.h"
 
 @interface AloViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 @property (weak, nonatomic) IBOutlet UITextView *textView;
-@property (strong, nonatomic) NSMutableArray *lista;
+@property (strong, nonatomic) ListaTarefas *tarefas;
 
 @end
 
 @implementation AloViewController
 
 - (void)atualizaTarefas {
-    self.textView.text = [self.lista componentsJoinedByString:@"\n"];
+    self.textView.text = [self.tarefas description];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    self.lista = [NSMutableArray arrayWithArray:@[@"Programar", @"Estudar", @"Trabalhar"]];
+
+    self.tarefas = [[ListaTarefas alloc] init];
     [self atualizaTarefas];
 }
 
@@ -36,9 +37,14 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)aloBotao:(id)sender {
+- (IBAction)adicionaItem:(id)sender {
     NSString *item = self.textField.text;
-    [self.lista addObject:item];
+    [self.tarefas adicionaItem:item];
+    [self atualizaTarefas];
+}
+
+- (IBAction)limpaItens:(id)sender {
+    [self.tarefas limpaItens];
     [self atualizaTarefas];
 }
 

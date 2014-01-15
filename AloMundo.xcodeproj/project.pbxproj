@@ -22,6 +22,8 @@
 		97279F5B188497000054DFD3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 97279F59188497000054DFD3 /* InfoPlist.strings */; };
 		97279F5D188497000054DFD3 /* AloMundoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97279F5C188497000054DFD3 /* AloMundoTests.m */; };
 		97279F681884B5350054DFD3 /* Contador.m in Sources */ = {isa = PBXBuildFile; fileRef = 97279F671884B5350054DFD3 /* Contador.m */; };
+		97279F6B188690080054DFD3 /* ListaTarefas.m in Sources */ = {isa = PBXBuildFile; fileRef = 97279F6A188690080054DFD3 /* ListaTarefas.m */; };
+		97279F6D188693FB0054DFD3 /* ListaTarefasTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 97279F6C188693FB0054DFD3 /* ListaTarefasTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,9 @@
 		97279F5C188497000054DFD3 /* AloMundoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AloMundoTests.m; sourceTree = "<group>"; };
 		97279F661884B5350054DFD3 /* Contador.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contador.h; sourceTree = "<group>"; };
 		97279F671884B5350054DFD3 /* Contador.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contador.m; sourceTree = "<group>"; };
+		97279F69188690080054DFD3 /* ListaTarefas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaTarefas.h; sourceTree = "<group>"; };
+		97279F6A188690080054DFD3 /* ListaTarefas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListaTarefas.m; sourceTree = "<group>"; };
+		97279F6C188693FB0054DFD3 /* ListaTarefasTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListaTarefasTest.m; path = ../AloMundo/ListaTarefasTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +123,8 @@
 				97279F40188497000054DFD3 /* AloAppDelegate.h */,
 				97279F41188497000054DFD3 /* AloAppDelegate.m */,
 				97279F43188497000054DFD3 /* Main.storyboard */,
+				97279F69188690080054DFD3 /* ListaTarefas.h */,
+				97279F6A188690080054DFD3 /* ListaTarefas.m */,
 				97279F46188497000054DFD3 /* AloViewController.h */,
 				97279F47188497000054DFD3 /* AloViewController.m */,
 				97279F661884B5350054DFD3 /* Contador.h */,
@@ -142,6 +149,7 @@
 		97279F56188497000054DFD3 /* AloMundoTests */ = {
 			isa = PBXGroup;
 			children = (
+				97279F6C188693FB0054DFD3 /* ListaTarefasTest.m */,
 				97279F5C188497000054DFD3 /* AloMundoTests.m */,
 				97279F57188497000054DFD3 /* Supporting Files */,
 			);
@@ -259,6 +267,7 @@
 				97279F42188497000054DFD3 /* AloAppDelegate.m in Sources */,
 				97279F48188497000054DFD3 /* AloViewController.m in Sources */,
 				97279F681884B5350054DFD3 /* Contador.m in Sources */,
+				97279F6B188690080054DFD3 /* ListaTarefas.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97279F6D188693FB0054DFD3 /* ListaTarefasTest.m in Sources */,
 				97279F5D188497000054DFD3 /* AloMundoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
