@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AloViewController : UIViewController
+@interface AloViewController : UIViewController<UITextFieldDelegate>
 
 @end

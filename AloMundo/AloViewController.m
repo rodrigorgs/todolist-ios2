@@ -27,6 +27,8 @@
 {
     [super viewDidLoad];
 
+    self.textField.delegate = self;
+    
     self.tarefas = [[ListaTarefas alloc] init];
     [self atualizaTarefas];
 }
@@ -35,6 +37,11 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
 }
 
 - (IBAction)adicionaItem:(id)sender {
