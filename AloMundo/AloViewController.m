@@ -8,6 +8,7 @@
 
 #import "AloViewController.h"
 #import "ListaTarefas.h"
+#import "DetailViewController.h"
 
 @interface AloViewController ()
 
@@ -54,6 +55,14 @@
 - (IBAction)limpaItens:(id)sender {
     [self.tarefas limpaItens];
     [self atualizaTarefas];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    UITableViewCell *cell = (UITableViewCell *)sender;
+    NSString *item = cell.textLabel.text;
+    
+    DetailViewController *detailVC = segue.destinationViewController;
+    detailVC.item = item;
 }
 
 #pragma mark - Table view data source

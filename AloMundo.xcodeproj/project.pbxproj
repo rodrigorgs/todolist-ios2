@@ -24,6 +24,7 @@
 		97279F681884B5350054DFD3 /* Contador.m in Sources */ = {isa = PBXBuildFile; fileRef = 97279F671884B5350054DFD3 /* Contador.m */; };
 		97279F6B188690080054DFD3 /* ListaTarefas.m in Sources */ = {isa = PBXBuildFile; fileRef = 97279F6A188690080054DFD3 /* ListaTarefas.m */; };
 		97279F6D188693FB0054DFD3 /* ListaTarefasTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 97279F6C188693FB0054DFD3 /* ListaTarefasTest.m */; };
+		97279F76188749D80054DFD3 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97279F75188749D80054DFD3 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		97279F69188690080054DFD3 /* ListaTarefas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaTarefas.h; sourceTree = "<group>"; };
 		97279F6A188690080054DFD3 /* ListaTarefas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListaTarefas.m; sourceTree = "<group>"; };
 		97279F6C188693FB0054DFD3 /* ListaTarefasTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListaTarefasTest.m; path = ../AloMundo/ListaTarefasTest.m; sourceTree = "<group>"; };
+		97279F74188749D80054DFD3 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		97279F75188749D80054DFD3 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +132,8 @@
 				97279F47188497000054DFD3 /* AloViewController.m */,
 				97279F661884B5350054DFD3 /* Contador.h */,
 				97279F671884B5350054DFD3 /* Contador.m */,
+				97279F74188749D80054DFD3 /* DetailViewController.h */,
+				97279F75188749D80054DFD3 /* DetailViewController.m */,
 				97279F49188497000054DFD3 /* Images.xcassets */,
 				97279F38188497000054DFD3 /* Supporting Files */,
 			);
@@ -268,6 +273,7 @@
 				97279F48188497000054DFD3 /* AloViewController.m in Sources */,
 				97279F681884B5350054DFD3 /* Contador.m in Sources */,
 				97279F6B188690080054DFD3 /* ListaTarefas.m in Sources */,
+				97279F76188749D80054DFD3 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +483,7 @@
 				97279F62188497000054DFD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		97279F63188497000054DFD3 /* Build configuration list for PBXNativeTarget "AloMundoTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +492,7 @@
 				97279F65188497000054DFD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
