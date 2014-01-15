@@ -12,15 +12,16 @@
 @interface AloViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *textField;
-@property (weak, nonatomic) IBOutlet UITextView *textView;
 @property (strong, nonatomic) ListaTarefas *tarefas;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
 @implementation AloViewController
 
 - (void)atualizaTarefas {
-    self.textView.text = [self.tarefas description];
+//    self.textView.text = [self.tarefas description];
+    [self.tableView reloadData];
 }
 
 - (void)viewDidLoad
@@ -53,6 +54,28 @@
 - (IBAction)limpaItens:(id)sender {
     [self.tarefas limpaItens];
     [self atualizaTarefas];
+}
+
+#pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.tarefas.itens.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    
+    cell.textLabel.text = [self.tarefas.itens objectAtIndex:indexPath.row];
+    
+    return cell;
 }
 
 @end
