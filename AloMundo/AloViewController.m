@@ -7,14 +7,18 @@
 //
 
 #import "AloViewController.h"
-#import "ListaTarefas.h"
 #import "DetailViewController.h"
+
+#import "ListaTarefas.h"
+#import "ListaTarefasReader.h"
 
 @interface AloViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *textField;
-@property (strong, nonatomic) ListaTarefas *tarefas;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+@property (strong, nonatomic) ListaTarefas *tarefas;
+@property (strong, nonatomic) ListaTarefasReader *tarefasReader;
 
 @end
 
@@ -31,6 +35,7 @@
 
     self.textField.delegate = self;
     
+    self.tarefasReader = [[ListaTarefasReader alloc] init];
     self.tarefas = [[ListaTarefas alloc] init];
     [self atualizaTarefas];
 }
@@ -54,6 +59,11 @@
 
 - (IBAction)limpaItens:(id)sender {
     [self.tarefas limpaItens];
+    [self atualizaTarefas];
+}
+
+- (IBAction)baixar:(id)sender {
+    self.tarefas = [self.tarefasReader readTarefas];
     [self atualizaTarefas];
 }
 

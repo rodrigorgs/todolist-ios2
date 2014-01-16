@@ -25,6 +25,7 @@
 		97279F6B188690080054DFD3 /* ListaTarefas.m in Sources */ = {isa = PBXBuildFile; fileRef = 97279F6A188690080054DFD3 /* ListaTarefas.m */; };
 		97279F6D188693FB0054DFD3 /* ListaTarefasTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 97279F6C188693FB0054DFD3 /* ListaTarefasTest.m */; };
 		97279F76188749D80054DFD3 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97279F75188749D80054DFD3 /* DetailViewController.m */; };
+		97279F791887EF3F0054DFD3 /* ListaTarefasReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 97279F781887EF3F0054DFD3 /* ListaTarefasReader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		97279F6C188693FB0054DFD3 /* ListaTarefasTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListaTarefasTest.m; path = ../AloMundo/ListaTarefasTest.m; sourceTree = "<group>"; };
 		97279F74188749D80054DFD3 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		97279F75188749D80054DFD3 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		97279F771887EF3F0054DFD3 /* ListaTarefasReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaTarefasReader.h; sourceTree = "<group>"; };
+		97279F781887EF3F0054DFD3 /* ListaTarefasReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListaTarefasReader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +133,8 @@
 				97279F6A188690080054DFD3 /* ListaTarefas.m */,
 				97279F46188497000054DFD3 /* AloViewController.h */,
 				97279F47188497000054DFD3 /* AloViewController.m */,
+				97279F771887EF3F0054DFD3 /* ListaTarefasReader.h */,
+				97279F781887EF3F0054DFD3 /* ListaTarefasReader.m */,
 				97279F661884B5350054DFD3 /* Contador.h */,
 				97279F671884B5350054DFD3 /* Contador.m */,
 				97279F74188749D80054DFD3 /* DetailViewController.h */,
@@ -270,6 +275,7 @@
 			files = (
 				97279F3E188497000054DFD3 /* main.m in Sources */,
 				97279F42188497000054DFD3 /* AloAppDelegate.m in Sources */,
+				97279F791887EF3F0054DFD3 /* ListaTarefasReader.m in Sources */,
 				97279F48188497000054DFD3 /* AloViewController.m in Sources */,
 				97279F681884B5350054DFD3 /* Contador.m in Sources */,
 				97279F6B188690080054DFD3 /* ListaTarefas.m in Sources */,
